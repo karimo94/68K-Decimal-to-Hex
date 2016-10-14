@@ -16,7 +16,7 @@ START:                  ; first instruction of program
     jsr     loop
     jsr     nl ;jump to newline subroutine to print a newline
     
-* prompt for the second value, store in d3
+* prompt for the second value, store in d4
     lea     input2prompt, a1
     move    #13,d0
     trap    #15
