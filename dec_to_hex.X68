@@ -99,6 +99,7 @@ print_hex:
     cmp.b   #$A,d5
     blt.s   print_d5
     bgt.s   print_letter
+    beq.s   print_letter
     cmp.b   #00,d5
     beq     break
     bra     print_hex    
