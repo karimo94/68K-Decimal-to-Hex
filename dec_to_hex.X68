@@ -69,8 +69,8 @@ loop2:
 
 divide_val_one:
     *val 1 resides in d2
-    *check to see if d2 is blank, that means we're done
-    cmp.b   #00,d2
+    *check to see if d2 is fully blank, that means we're done
+    cmp.l   #00000000,d2 
     beq     start2
     
     divs.w  #16,d2
